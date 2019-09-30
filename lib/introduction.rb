@@ -1,13 +1,22 @@
-"#introduction" do
-  it "takes in an argument of a name and puts out a phrase with that name using string interpolation" do
-    expect{introduction("Josh")}.to output("Hi, my name is Josh.\n").to_stdout
-    expect{introduction("Dan")}.to output("Hi, my name is Dan.\n").to_stdout
-  end
+def introduction(name) 
+ puts "Hi, my name is #{name}."
+  
+end
+
+introduction("mike")
+
+def introduction_with_language(name, language)
+  puts "Hi, my name is #{name} and I am learning to program in #{language}."
+
 end
 
 
+def introduction_with_language_optional(name, language)
+puts "Hi, my name is #{name} and I am learning to program in #{language}."
+end
 
-
+def introduction_with_language_optional(name, language, and language defaults to Ruby)
+  puts 
 
 # Write your code here. If you get stuck, at the very bottom of this lab we've included
 # the answers. You should ONLY check those answers if you get totally stuck. The important
